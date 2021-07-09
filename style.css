@@ -1,0 +1,134 @@
+/* inizio reset css */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* fine reset css */
+
+/* generici */
+body{
+	font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  background-image: url(immagini/background.jpg);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.container{
+	margin:5% 0%;
+  width: 60%;
+	height: auto;
+  border-radius: 15px;
+  background-color: rgba(20, 20, 20, 0.5);
+	padding: 5%;
+}
+																/* header */
+.menu{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.logo-top{
+  height: 125px;
+  width: auto;
+}
+.title{
+  color: rgb(10, 255, 10);
+	font-size: 25px;
+	font-weight: bold;
+	margin: 10px;
+}
+.prenotazione{
+  display: flex;
+	flex-wrap: wrap;
+  background-color: rgb(10, 255, 10);
+  width: 100%;
+  padding: 10px 0px;
+  justify-content: center;
+}
+.prenotazione ul{
+  display: flex;
+}
+.prenotazione li{
+	margin-right: 5px;
+}
+															/* main */
+.list li{
+	color: white;
+}
+.list li .nickname{
+	display: flex;
+	margin: 5px 0px;
+}
+.nickname label{
+	font-weight: bold;
+	font-size: 20px;
+}
+/* batterie monopattino */
+.charge-level{
+	height: 20px;
+	margin: 10px 0px;
+	border-radius: 3px;
+}
+.yellow{
+	background-color: yellow;
+	width: 40%;
+}
+.green{
+	background-color: green;
+	width: 70%;
+}
+.red{
+	background-color: red;
+	width: 25%;
+}
+/* media query */
+@media (max-width: 600px) {
+	.prenotazione ul{
+	  flex-direction: column;
+		align-items: center;
+	}
+	.prenotazione li{
+		margin: 5px 0px;
+	}
+}
